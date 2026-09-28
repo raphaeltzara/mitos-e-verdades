@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mitos e Verdades | Animais Marinhos</title>
+
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+        <h1>Mitos e Verdades</h1>
+
+        <p>
+            Descubra os mistérios e as curiosidades
+            sobre os animais marinhos!
+        </p>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+
+        <section class="introducao">
+
+            <h2>O que você sabe sobre os oceanos?</h2>
+
+            <p>
+                O oceano abriga criaturas extraordinárias,
+                mas também muitos mitos.
+
+                Vamos descobrir o que é verdade
+                e o que é apenas uma lenda!
+            </p>
+
+        </section>
+
+
+        <!-- SEÇÃO DOS CARTÕES -->
+
+        <section class="container-cards">
+
+
+            <!-- CARTÃO 1: TUBARÃO -->
+
+            <article class="card">
+
+                <img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/White_shark.jpg"
+    alt="Tubarão-branco nadando no oceano"
+>
+
+                <div class="card-conteudo">
+
+                    <span class="categoria">MITO</span>
+
+                    <h2>
+                        Tubarões precisam nadar
+                        constantemente para sobreviver?
+                    </h2>
+
+                    <p>
+                        Será que todos os tubarões
+                        precisam permanecer em movimento
+                        para conseguir respirar?
+                    </p>
+
+                    <button
+                        class="botao"
+                        onclick="abrirModal('tubarao')"
+                    >
+                        Saiba mais
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARTÃO 2: ÁGUA-VIVA -->
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=900"
+                    alt="Água-viva no oceano"
+                >
+
+                <div class="card-conteudo">
+
+                    <span class="categoria">MITO OU VERDADE?</span>
+
+                    <h2>
+                        Existem águas-vivas
+                        que são imortais?
+                    </h2>
+
+                    <p>
+                        Algumas águas-vivas possuem
+                        uma capacidade biológica
+                        que parece desafiar o envelhecimento.
+                    </p>
+
+                    <button
+                        class="botao"
+                        onclick="abrirModal('aguaviva')"
+                    >
+                        Saiba mais
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- JANELA MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-conteudo">
+
+            <!-- BOTÃO PARA FECHAR -->
+
+            <button
+                class="fechar"
+                onclick="fecharModal()"
+                aria-label="Fechar janela"
+            >
+                &times;
+            </button>
+
+
+            <!-- CONTEÚDO INSERIDO PELO JAVASCRIPT -->
+
+            <h2 id="modal-titulo"></h2>
+
+            <p id="modal-texto"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Mitos e Verdades: Animais Marinhos
+        </p>
+
+        <p>
+            Conhecer os oceanos é o primeiro passo
+            para protegê-los.
+        </p>
+
+    </footer>
+
+
+    <!-- CONEXÃO COM O JAVASCRIPT -->
+
+    <script src="modal.js"></script>
+
+</body>
+
+</html>

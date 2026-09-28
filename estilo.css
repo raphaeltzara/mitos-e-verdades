@@ -1,0 +1,432 @@
+/* ==================================
+   1. CONFIGURAÇÕES GERAIS
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #e9f5f7;
+
+    color: #163447;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================
+   2. CABEÇALHO
+================================== */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #06283d,
+        #13678a
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 65px 20px;
+}
+
+
+header h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+
+header p {
+    font-size: 18px;
+
+    color: #c5edf3;
+}
+
+
+/* ==================================
+   3. CONTEÚDO PRINCIPAL
+================================== */
+
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 50px 20px;
+}
+
+
+/* ==================================
+   4. INTRODUÇÃO
+================================== */
+
+.introducao {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.introducao h2 {
+    color: #075e78;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.introducao p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+}
+
+
+/* ==================================
+   5. CONTAINER DOS CARTÕES
+================================== */
+
+.container-cards {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==================================
+   6. CARTÕES
+================================== */
+
+.card {
+    background-color: #ffffff;
+
+    width: 450px;
+
+    border: 1px solid #d0e5e9;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(
+        0,
+        50,
+        70,
+        0.12
+    );
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(
+        0,
+        50,
+        70,
+        0.20
+    );
+}
+
+
+/* ==================================
+   7. IMAGENS
+================================== */
+
+.card img {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ==================================
+   8. CONTEÚDO DOS CARTÕES
+================================== */
+
+.card-conteudo {
+    padding: 25px;
+}
+
+
+.card-conteudo h2 {
+    font-size: 23px;
+
+    color: #064663;
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-conteudo p {
+    font-size: 16px;
+
+    color: #465c66;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==================================
+   9. CATEGORIAS
+================================== */
+
+.categoria {
+    display: inline-block;
+
+    background-color: #d8f3f0;
+
+    color: #087e8b;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==================================
+   10. BOTÕES
+================================== */
+
+.botao {
+    background-color: #088395;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    margin-top: 10px;
+
+    border: 2px solid #088395;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.botao:hover {
+    background-color: #06576b;
+
+    border-color: #06576b;
+
+    transform: scale(1.05);
+}
+
+
+/* ==================================
+   11. JANELA MODAL
+================================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(
+        0,
+        20,
+        35,
+        0.85
+    );
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* ==================================
+   12. CONTEÚDO DO MODAL
+================================== */
+
+.modal-conteudo {
+    background-color: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    max-width: 600px;
+
+    width: 100%;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    position: relative;
+
+    box-shadow: 0 15px 40px rgba(
+        0,
+        0,
+        0,
+        0.30
+    );
+}
+
+
+.modal-conteudo h2 {
+    color: #075e78;
+
+    margin-bottom: 20px;
+
+    padding-right: 25px;
+}
+
+
+.modal-conteudo p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #344c58;
+}
+
+
+/* ==================================
+   13. BOTÃO PARA FECHAR O MODAL
+================================== */
+
+.fechar {
+    position: absolute;
+
+    top: 12px;
+
+    right: 20px;
+
+    background: transparent;
+
+    border: none;
+
+    color: #075e78;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+
+.fechar:hover {
+    color: #e63946;
+}
+
+
+/* ==================================
+   14. RODAPÉ
+================================== */
+
+footer {
+    background-color: #06283d;
+
+    color: #d4edf1;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+
+footer p {
+    margin-bottom: 8px;
+}
+
+
+/* ==================================
+   15. RESPONSIVIDADE
+================================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+
+    .introducao h2 {
+        font-size: 25px;
+    }
+
+
+    .container-cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .card {
+        width: 100%;
+
+        max-width: 450px;
+    }
+
+
+    .modal-conteudo {
+        padding: 30px 22px;
+    }
+
+}
